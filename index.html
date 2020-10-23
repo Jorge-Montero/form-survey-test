@@ -9,9 +9,27 @@
     <h1 id="title">Basic Survey</h1>
     <p id="description">Short Explanation: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     <form id="survey-form">Lorem Ipsum
-        <input id="name-label" placeholder="Enter Name Here" required/>
-        <input type="email-label" name="contact" id="email" placeholder="Enter Email Here" required/>
-        <input type="number-label" id="number" min="1" max="99" placeholder="Enter Number Here"/>
+        <label for="email" id="email-label">email: </label>
+        <input type="email" name="contact" id="email" required/>
+        <label for="name" id="name-label">name: </label>
+        <input type="text" id="name" required/>
+        <label for="number" id="number-label">number: </label>
+        <input type="number" id="number" min="3" max="12"/>
+        <select name="dropdown" id="dropdown">
+            <option value="choice1">choice1</option>
+            <option value="choice2">choice2</option>
+            <option value="choice3">choice3</option>
+            <option value="choice4">choice4</option>
+        </select>
+        <input type="checkbox" name="option1" id="checkbox1" value="option1" />
+        <label for="checkbox1">option 1</label>
+        <input type="checkbox" name="option2" id="checkbox2" value="option2" />
+        <label for="checkbox2">option 2</label>
+        <input type="checkbox" name="option3" id="checkbox3" value="option3" />
+        <label for="checkbox3">option 3</label>
+        <input type="checkbox" name="option4" id="checkbox4" value="option4" />
+        <label for="checkbox4">option 4</label>
+        <input type="submit" id="submit" value="allThis">
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
